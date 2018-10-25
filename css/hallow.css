@@ -1,0 +1,30 @@
+
+.box-container {
+  cursor: pointer;
+  height: 400px;
+  perspective: 600;
+  position: relative;
+  width: 400px;
+}
+.box {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 2s ease-in-out;
+  width: 100%;
+}
+.box:hover {
+  transform: rotateY(180deg);
+}
+.box .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.box .back {
+  line-height: 150px;
+  transform: rotateY(180deg);
+}
